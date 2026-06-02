@@ -1,0 +1,60 @@
+title: Dani Zakaria
+author: Dani Zakaria
+url: https://DaniZakaria63.github.io
+baseurl: ""
+description: >
+  Personal space of Dani Zakaria — thoughts, projects, and more.
+
+picture: assets/images/profile.svg
+external-image: false
+
+permalink: /:slug
+
+remote_theme: abhinavs/moonwalk
+
+theme_config:
+  appearance: "dark"
+  appearance_toggle: true
+  date_format: "%Y-%m-%d"
+  show_description: true
+  show_navbar: true
+  show_footer: true
+  show_copyright: true
+  show_projects: false
+  show_blog: false
+  show_old_projects: false
+  show_misc_list: false
+  show_reading_time: true
+  show_tags: true
+  show_code_copy: true
+  show_progress_bar: true
+  show_back_to_top: true
+  show_post_nav: true
+  show_toc: true
+  show_footnote_tooltips: true
+  show_link_previews: true
+  home:
+    title_projects: Project
+    title_blog: Thought
+
+soopr:
+  publish_token: ""
+
+highlighter: rouge
+
+sass:
+  style: :compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+markdown_output:
+  collections: [posts]
+
+llms_output:
+  index:
+    collections: [posts]
+  full:
+    collections: [posts]
+    respect_markdown_output: true

@@ -1,0 +1,17 @@
+navbar_entries:
+  - title: Introduction
+    url: /
+  - title: Thought
+    url: /thought
+  - title: Project
+    url: /project
+  - title: Résumé
+    url: /resume
+
+footer_entries:
+  - title: github
+    url: https://github.com/DaniZakaria63
+  - title: feed
+    url: feed.xml
+  - title: llms.txt
+    url: llms.txt
