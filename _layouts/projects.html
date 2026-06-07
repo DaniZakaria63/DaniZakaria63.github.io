@@ -2,12 +2,16 @@
 layout: page
 ---
 
-{% assign all_projects = site.html_pages | where: "type", "project" %}
+{% assign all_projects = site.data.projects %}
 {% assign featured = all_projects | where: "featured", true | first %}
 
 {% if featured %}
   <h2>
-    <a href="{{ featured.url | relative_url }}">{{ featured.title }}</a>
+    {% if featured.url %}
+      <a href="{{ featured.url }}">{{ featured.title }}</a>
+    {% else %}
+      {{ featured.title }}
+    {% endif %}
     {% if featured.status %}
       <mark>{{ featured.status }}</mark>
     {% endif %}
@@ -25,9 +29,13 @@ layout: page
   <ul>
     {% for project in others %}
       <li>
-        <a href="{{ project.url | relative_url }}">
+        {% if project.url %}
+          <a href="{{ project.url }}">
+            <strong>{{ project.title }}</strong>
+          </a>
+        {% else %}
           <strong>{{ project.title }}</strong>
-        </a>
+        {% endif %}
         {% if project.description %}
           <br />{{ project.description }}
         {% endif %}
