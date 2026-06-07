@@ -2,7 +2,8 @@
 layout: page
 ---
 
-{% assign featured = site.projects | where: "featured", true | first %}
+{% assign all_projects = site.html_pages | where: "type", "project" %}
+{% assign featured = all_projects | where: "featured", true | first %}
 
 {% if featured %}
   <h2>
@@ -19,7 +20,7 @@ layout: page
 
 <h3>All Projects</h3>
 
-{% assign others = site.projects | where: "featured", false %}
+{% assign others = all_projects | where: "featured", false %}
 {% if others.size > 0 %}
   <ul>
     {% for project in others %}

@@ -10,11 +10,6 @@ external-image: false
 
 permalink: /:slug
 
-collections:
-  projects:
-    output: true
-    permalink: /projects/:slug
-
 remote_theme: abhinavs/moonwalk
 
 theme_config:
