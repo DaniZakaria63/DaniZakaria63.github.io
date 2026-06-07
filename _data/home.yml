@@ -5,13 +5,11 @@ navbar_entries:
     url: /thought
   - title: Project
     url: /project
-  - title: Résumé
+  - title: Resume
     url: /resume
 
 footer_entries:
   - title: github
     url: https://github.com/DaniZakaria63
-  - title: feed
-    url: feed.xml
-  - title: llms.txt
-    url: llms.txt
+  - title: linkedin
+    url: https://www.linkedin.com/in/dani-zakaria

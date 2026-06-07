@@ -2,17 +2,17 @@
 layout: home
 ---
 
-<img src="./assets/images/profile.svg" alt="Dani Zakaria" class="selfie" width="120" height="120" style="border-radius:50%;display:block;margin:0 auto 1.5rem" />
+<img src="./assets/images/ryuu.jpg" alt="Dani Zakaria" class="selfie" width="120" height="120" style="border-radius:50%;display:block;margin:0 auto 1.5rem" />
 
 ## About Me
 
 Hello, fellow friends. Welcome to my github space! 
-
+file:///home/dani/Pictures/ryuu.jpg
 I love to write about technology, mobile, integration of artificial intellegence, or just express my thoughts. My professoinal background as an android developer, you can see more details at [resume section](./resume.md).
 
 ----
 
-I know it will be so boring if I just talk about myself. So, this space is dedicated to you guys. For those who interest in anything about on-device llm with really optimized process, I have provide at [projects](./project.md) section. 
+I know it will be so boring if I just talk about myself. So, this space is dedicated to you guys. For those who interest in anything about on-device llm with really optimized process, I have provide at [projects](./project.md) section. My avatar is a character from Anime Sakurasou who is a nerd, love to solitude, yet master in his computer field even makes his own AI virtual companion who always accompany him. His AI which embarks idea to make my own AI and work hard to make that dream comes true.
 
 That section inform you my approach how to deal with several case like CPU optimization, opengl, vulkan, or anything technical about android especially. Deploy large language model inside mobile device is really challeging due to low resources it has. Imagine your phone has eight gigs of memory and try to run 3B model which stay on memory around 1.5 gigs. It just load, the process itself need more memory and cpu. Thus the Qualcomm processor has NPU which amazing, but that is only for Flagship only. That complexity what makes integrating become challeging, isn't it?
 
