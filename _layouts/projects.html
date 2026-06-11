@@ -21,7 +21,7 @@ layout: page
 
 <h3>All Projects</h3>
 
-{% assign others = all_projects | where: "featured", false %}
+{% assign others = all_projects | where_exp: "p", "p.featured != true" %}
 {% if others.size > 0 %}
   <ul>
     {% for project in others %}
