@@ -2,6 +2,8 @@
 title: Aoi AI Avatar Companion
 description: On-device AI avatar that puts privacy first
 type: project
+featured: true
+status: WIP
 layout: page
 ---
 
