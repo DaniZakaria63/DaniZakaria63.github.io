@@ -2,22 +2,19 @@
 layout: page
 ---
 
-{% assign all_projects = site.data.projects %}
+{% assign all_projects = site.html_pages | where: "dir", "/projects/" | sort: "title" %}
 {% assign featured = all_projects | where: "featured", true | first %}
 
 {% if featured %}
   <h2>
-    {% if featured.url %}
-      <a href="{{ featured.url }}">{{ featured.title }}</a>
-    {% else %}
-      {{ featured.title }}
-    {% endif %}
+    <a href="{{ featured.url }}">{{ featured.title }}</a>
     {% if featured.status %}
       <mark>{{ featured.status }}</mark>
     {% endif %}
   </h2>
-  {% if featured.preview %}
-    <p>{{ featured.preview }}</p>
+  {% assign preview = featured.preview | default: featured.description %}
+  {% if preview %}
+    <p>{{ preview }}</p>
   {% endif %}
   <hr />
 {% endif %}
@@ -29,15 +26,12 @@ layout: page
   <ul>
     {% for project in others %}
       <li>
-        {% if project.url %}
-          <a href="{{ project.url }}">
-            <strong>{{ project.title }}</strong>
-          </a>
-        {% else %}
+        <a href="{{ project.url }}">
           <strong>{{ project.title }}</strong>
-        {% endif %}
-        {% if project.description %}
-          <br />{{ project.description }}
+        </a>
+        {% assign preview = project.preview | default: project.description %}
+        {% if preview %}
+          <br />{{ preview }}
         {% endif %}
       </li>
     {% endfor %}
